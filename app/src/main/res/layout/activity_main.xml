@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD3D9"
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/cat1"
+        android:layout_width="167dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269"
+        app:srcCompat="@drawable/cat1" />
+
+    <ImageView
+        android:id="@+id/cat2"
+        android:layout_width="158dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cat3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cat1"
+        app:srcCompat="@drawable/cat2" />
+
+    <ImageView
+        android:id="@+id/cat3"
+        android:layout_width="156dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginRight="232dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cat2"
+        app:srcCompat="@drawable/cat3" />
+
+    <ImageView
+        android:id="@+id/cat4"
+        android:layout_width="168dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/cat5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cat2"
+        app:layout_constraintTop_toBottomOf="@+id/cat1"
+        app:srcCompat="@drawable/cat4" />
+
+    <ImageView
+        android:id="@+id/cat5"
+        android:layout_width="165dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/cat3"
+        app:layout_constraintTop_toBottomOf="@+id/cat4"
+        app:srcCompat="@drawable/cat5" />
+
+    <TextView
+        android:id="@+id/meowtext"
+        android:layout_width="316dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="387dp"
+        android:text="PAW-TRAITS"
+        android:textColor="@android:color/black"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/cat5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/exitButton"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="117dp"
+        android:text="Bye!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cat5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cat3" />
+
+</android.support.constraint.ConstraintLayout>
